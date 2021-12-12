@@ -1,13 +1,146 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+:root {
+  --darkColor: #413c3c;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  background-color: var(--darkColor);
+  font-family: poppins;
 }
+
+.container {
+  width: 85%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin: 2em auto;
+}
+
+header h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+form {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2em;
+}
+
+form input {
+  padding: 1em;
+  font-size: 1rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+form .search {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin-right: 1em;
+}
+
+form .submit {
+  background-color: orange;
+  color: white;
+  padding: 1em 2em;
+  cursor: pointer;
+}
+
+.results-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.results-container .result {
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+.results-container .result img {
+  width: 200px;
+}
+
+.results-container .result p {
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  margin: 0;
+  max-width: 200px;
+}
+
+.results-container .result:hover p {
+  background-color: white;
+  color: var(--darkColor);
+}
+
+.popup {
+  background-color: var(--darkColor);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.popup .popup-container {
+  width: 85%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.popup .popup-container h1 {
+  color: white;
+}
+
+.popup .popup-container h1 span {
+  color: white;
+  font-size: 1rem;
+}
+
+.popup .popup-container .description {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.popup .popup-container .description img {
+  width: 300px;
+  margin-right: 2em;
+}
+
+.popup .popup-container .description p {
+  color: white;
+}
+
+.popup .popup-container button {
+  color: white;
+  background-color: orangered;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 2em;
+}
+/*# sourceMappingURL=index.css.map */
